@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registration</title>
+	</head>
+	<body>
+		<h1>Registration</h1>
+		<form action="RegistrationAction.php" method="post" novalidate>
+			<fieldset>
+				<legend><h2>Basic Information</h2></legend>
+				<table>
+					<tr>
+						<td><label for="fname">*First name:</label></td>
+						<td><input type="text" name="firstname" id="fname"></td>
+					</tr>
+					<tr>
+						<td><label for="lname">*Last name:</label></td>
+						<td><input type="text" name="lastname" id="lname"></td>
+					</tr>
+					<tr>
+						<td><label for="gen">*Gender:</label></td>
+						<td><input type="radio" name="gender" value="male" id="m"><label for="m">Male</label>
+							<input type="radio" name="gender" value="female" id="f"><label for="f">Female</label>
+							<input type="radio" name="gender" value="other" id="o"><label for="o">Other</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="dob">*Date Of Birth:</label></td>
+						<td><input type="date" name="dob" id="dob"></td>
+					</tr>
+					<tr>
+						<td><label for="rel">*Religion:</label></td>
+						<td>
+							<select name="religion" id="rel">
+								<option value="islam">Islam</option>
+								<option value="hindu">Hindu</option>
+								<option value="christian">Christian</option>
+								<option value="other">Others</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<legend><h2>Contact Information</h2></legend>
+				<table>
+					<tr>
+						<td><label for="preadd">*Present Address:</label></td>
+						<td><textarea name="preaddress" id="preadd"></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="paradd">Permanent Address:</label></td>
+						<td><textarea name="paraddress" id="paradd"></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="ph">Phone</label></td>
+						<td><input type="tel" name="phone" id="ph"></td>
+					</tr>
+					<tr>
+						<td><label for="mail">*Email</label></td>
+						<td><input type="email" name="email" id="mail"></td>
+					</tr>
+					<tr>
+						<td><label for="web">Personal Website:</label></td>
+						<td><input type="url" name="website" id="web"></td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<legend><h2>Credential</h2></legend>
+				<table>
+					<tr>
+						<td><label for="uname">*Username:</label></td>
+						<td><input type="text" name="username" id="uname"></td>
+					</tr>
+					<tr>
+						<td><label for="pass">*Password:</label></td>
+						<td><input type="password" name="password" id="pass"></td>
+					</tr>
+					<tr>
+						<td><label for="conpass">*Confirm Password:</label></td>
+						<td><input type="password" name="confirm" id="conpass"></td>
+					</tr>
+				</table>
+			</fieldset>
+			
+			<br><br>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</body>
+</html>
