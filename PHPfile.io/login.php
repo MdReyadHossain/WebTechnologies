@@ -16,6 +16,7 @@
     </head>
     <body>
         <h2>Sign in</h2>
+        
         <form action="LoginAction.php" target="_self" method="POST">
             <br>
                 <table>
