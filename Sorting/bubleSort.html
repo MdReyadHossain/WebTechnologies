@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <h1>Sort Data</h1>
+    <br>
+
+    <form action="fetchdata.php" method="GET" onsubmit="bubblesort(this); return false;">
+        <label for="data"><b>Number of Data : </b></label>
+        <input type="number" style="width: 4em;" name="num_of_data" id="data">
+        <span id="err" style="color: red;"></span>
+        <input type="submit" hidden>
+    </form>
+    <br><br>
+    <div id="databox"></div>
+
+    <script>
+        function bubblesort(sort) {
+            let error = document.getElementById("err");
+            let dataurl = sort.action;
+            let numofdata = sort.num_of_data.value;
+            let isValid = true;
+
+            error.innerHTML = "";
+            if(numofdata == "" || numofdata == 0) {
+                error.innerHTML = "❗NULL";
+                isValid = false;
+            }
+            else if(numofdata == 1) {
+                error.innerHTML = "❗too much low data";
+                isValid = false;
+            }
+
+            else {
+                let xhttp = new XMLHttpRequest();
+				xhttp.onload = function(){
+					document.getElementById('databox').innerHTML = this.responseText;
+				}
+
+				xhttp.open("GET", dataurl + "?data=" + numofdata);
+				xhttp.send();
+            }
+
+            return isValid;
+        }
+        
+    </script>
+</div>
+</body>
+</html>
+
+<a href="logout.php"><button>Logout</button></a>

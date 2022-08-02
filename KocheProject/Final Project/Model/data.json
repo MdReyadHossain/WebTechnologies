@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "First_name": "Kamrul",
+        "Last_name": "Hasan",
+        "Gender": "Male",
+        "Email": "kamrulkoche@gmail.com",
+        "Phone_Number": "01798135862",
+        "Road": "Basundora",
+        "Country": "Bangladesh",
+        "User_name": "kamrul",
+        "Password": "123",
+        "Confirm Password": "123"
+    },
+    {
+        "id": 2,
+        "First_name": "Reyad",
+        "Last_name": "Hossen",
+        "Gender": "Male",
+        "Email": "reyad@gmail.com",
+        "Phone_Number": "01867583178",
+        "Road": "Mirpur",
+        "Country": "Bangladesh",
+        "User_name": "reyad",
+        "Password": "123",
+        "Confirm Password": "123"
+    },
+    {
+        "id": 4,
+        "First_name": "Jannatul",
+        "Last_name": "Adol",
+        "Gender": "Female",
+        "Email": "jannatuladol@gmail.com",
+        "Phone_Number": "01798135864",
+        "Road": "Kusthia",
+        "Country": "Bangladesh",
+        "User_name": "adol",
+        "Password": "adol",
+        "Confirm Password": "adol"
+    },
+    {
+        "id": 6,
+        "First_name": "Alif",
+        "Last_name": "Kahn",
+        "Gender": "Male",
+        "Email": "alifkhan@gmail.com",
+        "Phone_Number": "017856556578",
+        "Road": "Basundhora",
+        "Country": "Bangladesh",
+        "User_name": "alif",
+        "Password": "alif",
+        "Confirm Password": "alif"
+    }
+]
